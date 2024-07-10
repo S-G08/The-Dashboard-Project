@@ -1,37 +1,61 @@
-.main {
+body {
+  font-family: "Sedan SC", serif;
+}
+
+main {
   display: grid;
   grid-template-columns: 1fr 5fr;
   gap: 20px;
   padding: 20px;
-  grid-template-areas: "left", "right";
 }
-/* Nav Bar Section*/
+
+/* Left Section*/
 .left {
-  display: grid;
-  grid-area: left;
-  position: fixed;
-  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  top: 20px;
+  height: 90vh;
+  border-radius: 30px;
   background-color: black;
   color: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
 }
-/* #navbar h2 {
-  text-align: center;
-} */
-/* Nav Links unordered list */
-/* #nav_links {
-  list-style-type: none;
-  padding: 10px;
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
 }
-#nav_links li {
-  padding: 20px;
+.profile img {
+  width: 60%;
+  height: 75%;
 }
-#nav_links .material-symbols-outlined {
-  margin-right: 20px;
-  margin-bottom: 20px;
-} */
+.profile p {
+  font-size: 20px;
+  font-weight: 250;
+}
+.nav {
+  display: flex;
+  padding-right: 20px;
+  margin-left: 30px;
+}
+
+.nav > a {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 30px;
+}
+.nav:hover {
+  color: gold;
+}
+.nav > a:hover {
+  color: lightgray;
+}
+
+/* Right Section */
 .right {
-  grid-area: right;
 }
