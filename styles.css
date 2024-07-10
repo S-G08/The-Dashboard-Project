@@ -1,5 +1,6 @@
 body {
   font-family: "Sedan SC", serif;
+  background-color: rgb(242, 241, 241);
 }
 
 main {
@@ -32,7 +33,7 @@ main {
   height: 75%;
 }
 .profile p {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 250;
 }
 .nav {
@@ -58,4 +59,28 @@ main {
 
 /* Right Section */
 .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 2em;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+header #search {
+  margin-right: 5%;
+  margin-top: 20px;
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+}
+header #search:focus {
+  outline: none;
+  border: 3px solid lightgreen;
 }
