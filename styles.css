@@ -191,3 +191,43 @@ header #search:focus {
 #users table tbody tr:hover {
   background-color: #eaeaea;
 }
+
+/* Schedule Section */
+#schedule {
+  background-color: white;
+  width: 90%;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 70px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+#schedule .heading {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+#schedule .heading p {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#schedule .meeting h3,
+p {
+  margin: 0px;
+  padding-left: 10px;
+}
+#schedule .meeting p {
+  color: #a6a6a6;
+}
+#schedule .meeting {
+  margin-bottom: 10px;
+}
+#schedule .meeting:nth-child(even) {
+  border-left: 3px solid lightgreen;
+}
+#schedule .meeting:nth-child(odd) {
+  border-left: 3px solid rgb(192, 98, 192);
+}
