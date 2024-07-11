@@ -204,7 +204,7 @@ header #search:focus {
   overflow-y: scroll;
 }
 
-#schedule .heading {
+#schedule .heading1 {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -279,4 +279,37 @@ textarea {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .links {
+  margin-bottom: 10px;
+}
+footer a {
+  font-size: 25px;
+  color: white;
+  margin: 10px;
+}
+footer a:hover {
+  color: lightgray;
+}
+footer a:first-child {
+  margin-left: 0;
+}
+footer a:last-child {
+  margin-right: 0;
+}
+
+/* H2 HEADINGS */
+.heading:hover {
+  font-size: 32px;
+  text-decoration-color: goldenrod;
+  transition: 1s;
 }
