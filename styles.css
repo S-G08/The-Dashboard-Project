@@ -1,3 +1,7 @@
+@font-face {
+  font-family: ShortBaby;
+  src: url("ShortBaby-Mg2w.ttf");
+}
 body {
   font-family: "Sedan SC", serif;
   background-color: rgb(242, 241, 241);
@@ -94,7 +98,6 @@ header #search:focus {
   width: 80%;
   background-color: white;
   margin-left: 50px;
-
   padding: 10px;
   border-radius: 25px;
 }
@@ -102,4 +105,56 @@ header #search:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Data Section */
+#dashboard_data_heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+#data {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: ShortBaby;
+}
+#data .data_cards {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  width: 180px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+#data .data_cards i {
+  align-self: flex-end;
+}
+#data .data_cards:hover {
+  background: radial-gradient(rgb(205, 141, 141), rgb(168, 168, 229));
+}
+#data .cardhead {
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+#data .carddata {
+  margin-top: 4px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+#revenue {
+  background-color: lightgreen;
+}
+#transaction {
+  background-color: lightgoldenrodyellow;
+}
+#likes {
+  background-color: lightpink;
+}
+#user_data {
+  background-color: lightsalmon;
 }
