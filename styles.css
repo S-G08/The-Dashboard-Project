@@ -231,3 +231,52 @@ p {
 #schedule .meeting:nth-child(odd) {
   border-left: 3px solid rgb(192, 98, 192);
 }
+
+/* Contact Section */
+.location {
+  margin-left: 50px;
+}
+.location > h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.contact_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.location #map iframe {
+  border-radius: 30px;
+}
+.location .feedback_form {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+.feedback_form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.feedback_form textarea {
+  resize: vertical;
+  height: 150px;
+}
+.feedback_form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9bdd7c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
