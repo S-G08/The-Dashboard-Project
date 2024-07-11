@@ -158,3 +158,36 @@ header #search:focus {
 #user_data {
   background-color: lightsalmon;
 }
+
+/* User Interactions Section */
+#users {
+  margin-top: 50px;
+  margin-left: 70px;
+}
+#users h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+#users table {
+  width: 95%;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+#users table th {
+  background-color: #a39696;
+  padding: 15px;
+  font-weight: 600;
+}
+#users table tr {
+  background-color: white;
+}
+#users table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#users table td {
+  text-align: center;
+  padding: 15px;
+}
+#users table tbody tr:hover {
+  background-color: #eaeaea;
+}
