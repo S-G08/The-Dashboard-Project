@@ -109,10 +109,8 @@ header #search:focus {
 
 /* Data Section */
 #dashboard_data_heading {
-  text-align: center;
   margin-top: 50px;
   margin-bottom: 0;
-  text-decoration: underline;
 }
 #data {
   display: flex;
@@ -164,10 +162,6 @@ header #search:focus {
   margin-top: 50px;
   margin-left: 70px;
 }
-#users h2 {
-  text-align: center;
-  text-decoration: underline;
-}
 #users table {
   width: 95%;
   border-collapse: collapse;
@@ -213,7 +207,10 @@ header #search:focus {
   margin-right: 20px;
   margin-top: 20px;
 }
-
+#schedule_p:hover {
+  color: green;
+  cursor: pointer;
+}
 #schedule .meeting h3,
 p {
   margin: 0px;
@@ -308,6 +305,10 @@ footer a:last-child {
 }
 
 /* H2 HEADINGS */
+.heading {
+  text-align: center;
+  text-decoration: underline;
+}
 .heading:hover {
   font-size: 32px;
   text-decoration-color: goldenrod;
