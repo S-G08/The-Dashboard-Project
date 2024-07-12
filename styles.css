@@ -10,19 +10,19 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  gap: 20px;
-  padding: 20px;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 /* Left Section*/
 .left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
   position: sticky;
-  top: 20px;
+  top: 1rem;
   height: 90vh;
-  border-radius: 30px;
+  border-radius: 1.5rem;
   background-color: black;
   color: white;
 }
@@ -30,29 +30,30 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 0.5rem;
 }
 .profile img {
-  width: 60%;
-  height: 75%;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
 }
 .profile p {
-  font-size: 1.5em;
+  font-size: 1.4rem;
   font-weight: 250;
 }
 .nav {
   display: flex;
-  padding-right: 20px;
-  margin-left: 30px;
+  padding-right: 1.5rem;
+  margin-left: 2rem;
 }
 
 .nav > a {
-  padding-left: 20px;
+  padding-left: 1rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.8rem;
   text-decoration: none;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 .nav:hover {
   color: gold;
@@ -65,7 +66,7 @@ main {
 .right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
 }
 
 /* Header Section */
@@ -75,16 +76,16 @@ header {
 }
 header h1 {
   font-size: 2em;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 header #search {
   margin-right: 5%;
-  margin-top: 20px;
-  width: 200px;
-  height: 25px;
+  margin-top: 1rem;
+  width: 10rem;
+  height: 1.25rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.5rem;
 }
 header #search:focus {
   outline: none;
@@ -97,9 +98,9 @@ header #search:focus {
   flex-direction: column;
   width: 80%;
   background-color: white;
-  margin-left: 50px;
-  padding: 10px;
-  border-radius: 25px;
+  margin-left: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
 }
 #board img {
   width: 100%;
@@ -109,24 +110,24 @@ header #search:focus {
 
 /* Data Section */
 #dashboard_data_heading {
-  margin-top: 50px;
+  margin-top: 2.5rem;
   margin-bottom: 0;
 }
 #data {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1rem;
   flex-wrap: wrap;
   font-family: ShortBaby;
 }
 #data .data_cards {
   display: flex;
   flex-direction: column;
-  height: 70px;
-  width: 180px;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 20px;
+  height: 3.5rem;
+  width: 9rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 #data .data_cards i {
   align-self: flex-end;
@@ -136,13 +137,13 @@ header #search:focus {
 }
 #data .cardhead {
   margin: 0px;
-  margin-left: 10px;
-  font-size: 18px;
+  margin-left: 0.5rem;
+  font-size: 1rem;
 }
 #data .carddata {
-  margin-top: 4px;
-  font-size: 16px;
-  margin-left: 10px;
+  margin-top: 0.25rem;
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
 }
 #revenue {
   background-color: lightgreen;
@@ -159,17 +160,17 @@ header #search:focus {
 
 /* User Interactions Section */
 #users {
-  margin-top: 50px;
-  margin-left: 70px;
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
 }
 #users table {
   width: 95%;
   border-collapse: collapse;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 #users table th {
   background-color: #a39696;
-  padding: 15px;
+  padding: 0.7rem;
   font-weight: 600;
 }
 #users table tr {
@@ -180,7 +181,7 @@ header #search:focus {
 }
 #users table td {
   text-align: center;
-  padding: 15px;
+  padding: 0.7rem;
 }
 #users table tbody tr:hover {
   background-color: #eaeaea;
@@ -190,11 +191,11 @@ header #search:focus {
 #schedule {
   background-color: white;
   width: 90%;
-  height: 300px;
-  margin-top: 50px;
-  margin-left: 70px;
-  padding: 15px;
-  border-radius: 10px;
+  height: 15rem;
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
   overflow-y: scroll;
 }
 
@@ -204,8 +205,8 @@ header #search:focus {
   align-content: center;
 }
 #schedule .heading p {
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 #schedule_p:hover {
   color: green;
@@ -214,13 +215,13 @@ header #search:focus {
 #schedule .meeting h3,
 p {
   margin: 0px;
-  padding-left: 10px;
+  padding-left: 0.5rem;
 }
 #schedule .meeting p {
   color: #a6a6a6;
 }
 #schedule .meeting {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 #schedule .meeting:nth-child(even) {
   border-left: 3px solid lightgreen;
@@ -231,7 +232,7 @@ p {
 
 /* Contact Section */
 .location {
-  margin-left: 50px;
+  margin-left: 2.5rem;
 }
 .location > h2 {
   text-align: center;
@@ -240,36 +241,36 @@ p {
 .contact_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .location #map iframe {
-  border-radius: 30px;
+  border-radius: 1.5rem;
 }
 .location .feedback_form {
   background-color: white;
-  border-radius: 30px;
-  padding: 20px;
+  border-radius: 1.5rem;
+  padding: 1rem;
 }
 .feedback_form input,
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 .feedback_form textarea {
   resize: vertical;
-  height: 150px;
+  height: 7.5rem;
 }
 .feedback_form button {
   width: 100%;
-  padding: 10px;
+  padding: 0.5rem;
   border: none;
   border-radius: 5px;
   background-color: #9bdd7c;
@@ -283,16 +284,16 @@ footer {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 1rem 0;
   text-align: center;
 }
 footer .links {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 footer a {
-  font-size: 25px;
+  font-size: 1.2rem;
   color: white;
-  margin: 10px;
+  margin: 0.5rem;
 }
 footer a:hover {
   color: lightgray;
@@ -310,7 +311,7 @@ footer a:last-child {
   text-decoration: underline;
 }
 .heading:hover {
-  font-size: 32px;
+  font-size: 1.6rem;
   text-decoration-color: goldenrod;
   transition: 1s;
 }
