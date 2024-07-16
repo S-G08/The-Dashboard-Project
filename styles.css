@@ -46,7 +46,9 @@ main {
   padding-right: 1.5rem;
   margin-left: 2rem;
 }
-
+.navbar .menu {
+  display: none;
+}
 .nav > a {
   padding-left: 1rem;
   font-weight: 400;
@@ -314,4 +316,83 @@ footer a:last-child {
   font-size: 1.6rem;
   text-decoration-color: goldenrod;
   transition: 1s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+  main {
+    display: block;
+  }
+  .left {
+    position: static;
+    height: auto;
+  }
+  .profile-img {
+    width: 15%;
+    position: absolute;
+    top: 0.1rem;
+  }
+  .profile p {
+    margin-top: 5.5rem;
+  }
+  .navbar {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+  }
+  .nav {
+    margin: 0;
+    padding: 0;
+  }
+  .nav i {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+  .profile-img {
+    position: relative;
+    width: 20%;
+  }
+  .profile p {
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .navbar .menu {
+    display: block;
+    color: white;
+    align-self: center;
+    margin-right: 2rem;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    max-width: fit-content;
+    background-color: #f1f1f1;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .menu:hover .dropdown-content {
+    display: block;
+    width: 100%;
+  }
 }
